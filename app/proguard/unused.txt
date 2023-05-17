@@ -1,4 +1,6 @@
 com.rong862.SplashAd.BuildConfig
+com.rong862.SplashAd.Hook:
+    public void <init>(int)
 com.rong862.SplashAd.MainHook:
     private static final java.lang.String TAG
 com.rong862.SplashAd.plugin.AiqiyiHook:
@@ -25,6 +27,27 @@ com.rong862.SplashAd.plugin.NeteaseHook:
     private static final java.lang.String TAG
 com.rong862.SplashAd.plugin.QqliveHook:
     private static final java.lang.String TAG
+com.rong862.SplashAd.plugin.SinaWeiboHook$cardType:
+    public static final int adCard
+    public static final int bigCard
+    public static final int blogCard
+    public static final int chCard
+    public static final int defLocation
+    public static final int hdCard
+    public static final int horToMeCard
+    public static final int hotLiao
+    public static final int hotliaoTab
+    public static final int meBigCard
+    public static final int meBigCard1
+    public static final int meTjCad
+    public static final int meTjTitle
+    public static final int otherCard
+    public static final int recomTab
+    public static final int searchCard
+    public static final int shiKuang
+    public static final int titleCard
+    public static final int topBlank
+    public static final int topHint
 com.rong862.SplashAd.plugin.SinaWeiboHook:
     private static final java.lang.String TAG
 com.rong862.SplashAd.plugin.TicketHook:
@@ -32,11 +55,301 @@ com.rong862.SplashAd.plugin.TicketHook:
 com.rong862.SplashAd.plugin.XimalayaHook:
     private static final java.lang.String TAG
 com.rong862.SplashAd.plugin.ZhihuHook:
+    private static final java.lang.String AdClassName
+    private static final java.lang.String CurVersion
     private static final java.lang.String TAG
 com.rong862.SplashAd.plugin.ZhixingHook:
     private static final java.lang.String TAG
-com.rong862.SplashAd.utils.LogUtil:
-    private static final java.lang.String TAG
-    public void <init>()
 com.rong862.SplashAd.utils.PackageUtil:
     public void <init>()
+com.rong862.utils.BuildConfig
+com.rong862.utils.ClassFilter$Classes:
+    public com.rong862.utils.ClassFilter$Classes filterByField(java.lang.String)
+    public com.rong862.utils.ClassFilter$Classes filterByField(java.lang.String,java.lang.String)
+    public com.rong862.utils.ClassFilter$Classes filterByMethodCountLess(int)
+    public com.rong862.utils.ClassFilter$Classes filterByMethodCountUp(int)
+    public varargs com.rong862.utils.ClassFilter$Classes filterByMethodMatchName(java.lang.String,java.lang.Class[])
+    public varargs com.rong862.utils.ClassFilter$Classes filterByMethodMatchParameters(java.lang.Class,java.lang.Class[])
+    public com.rong862.utils.ClassFilter$Classes filterByNoField(java.lang.String)
+    public varargs com.rong862.utils.ClassFilter$Classes filterByNoMethod(java.lang.Class,java.lang.Class[])
+com.rong862.utils.ClassFilter:
+    private static final java.lang.String TAG
+    public void <init>()
+    public static varargs java.util.List findClassesFromField(java.lang.Object,java.lang.Class,java.lang.Class[])
+    public static com.rong862.utils.ClassFilter$Classes findDefaultClasses(java.lang.ClassLoader,java.util.List)
+    public static java.lang.reflect.Field findFieldIfExists(java.lang.Class,java.lang.String)
+    public static java.util.List findFieldsWithType(java.lang.Object,java.lang.String)
+    public static java.lang.reflect.Field findFirstFieldWithType(java.lang.Object,java.lang.String)
+    public static varargs java.lang.reflect.Method findFirstMethodByMatchParameters(java.lang.Object,java.lang.Class,java.lang.Class[])
+    public static java.lang.reflect.Field findFirstPublicFieldWithType(java.lang.Object,java.lang.String)
+    public static varargs java.lang.reflect.Method findFirstPublicMethodByMatchParameters(java.lang.Object,java.lang.Class,java.lang.Class[])
+    public static java.lang.reflect.Field findFirstUnlimitedFieldWithType(java.lang.Class,java.lang.String)
+    public static varargs java.lang.reflect.Method findFirstUnlimitedMethodByMatchParameters(java.lang.Class,java.lang.Class,java.lang.Class[])
+    public static varargs java.util.List findMethodsByMatchName(java.lang.Object,java.lang.Class,java.lang.String,java.lang.Class[])
+    public static varargs java.util.List findMethodsByMatchParameters(java.lang.Object,java.lang.Class,java.lang.Class[])
+    public static java.util.List findPublicFieldsWithType(java.lang.Object,java.lang.String)
+    public static varargs java.util.List findPublicMethodsByMatchParameters(java.lang.Object,java.lang.Class,java.lang.Class[])
+    public static varargs java.lang.Class findfirstClassFromField(java.lang.Object,java.lang.Class,java.lang.Class[])
+    public static varargs java.lang.String getParametersString(java.lang.Class[])
+com.rong862.utils.ConfigUtil:
+    public boolean getBoolean(java.lang.String)
+    public boolean getBoolean(java.lang.String,boolean)
+    public int getInt(java.lang.String)
+    public int getInt(java.lang.String,int)
+    public void setBoolean(java.lang.String,boolean)
+    public void setInt(java.lang.String,int)
+com.rong862.utils.LogUtil:
+    public void <init>()
+com.rong862.utils.MultiprocessSharedPreferences$ReflectionUtil:
+    private void <init>()
+com.rong862.utils.MultiprocessSharedPreferences:
+    private static final int APPLY
+    private static final int COMMIT
+    private static final int CONTAINS
+    private static final int GET_ALL
+    private static final int GET_BOOLEAN
+    private static final int GET_FLOAT
+    private static final int GET_INT
+    private static final int GET_LONG
+    private static final int GET_STRING
+    private static final int GET_STRING_SET
+    private static final java.lang.String KEY
+    private static final java.lang.String KEY_NAME
+    private static final java.lang.String PATH_APPLY
+    private static final java.lang.String PATH_COMMIT
+    private static final java.lang.String PATH_CONTAINS
+    private static final java.lang.String PATH_GET_ALL
+    private static final java.lang.String PATH_GET_BOOLEAN
+    private static final java.lang.String PATH_GET_FLOAT
+    private static final java.lang.String PATH_GET_INT
+    private static final java.lang.String PATH_GET_LONG
+    private static final java.lang.String PATH_GET_STRING
+    private static final java.lang.String PATH_GET_STRING_SET
+    private static final java.lang.String PATH_REGISTER_ON_SHARED_PREFERENCE_CHANGE_LISTENER
+    private static final java.lang.String PATH_UNREGISTER_ON_SHARED_PREFERENCE_CHANGE_LISTENER
+    private static final java.lang.String PATH_WILDCARD
+    private static final int REGISTER_ON_SHARED_PREFERENCE_CHANGE_LISTENER
+    private static final int UNREGISTER_ON_SHARED_PREFERENCE_CHANGE_LISTENER
+com.rong862.utils.ToastUtil
+com.rong862.utils.VersionUtil:
+    private static final java.lang.String TAG
+    public void <init>()
+com.rong862.utils.XposedPlus:
+    public void <init>()
+    public static void HookAllConstructors(java.lang.String,java.lang.Class,de.robv.android.xposed.XC_MethodHook)
+    public static void HookAllConstructors(java.lang.String,java.lang.String,de.robv.android.xposed.XC_MethodHook)
+    public static void HookAllMethods(java.lang.String,java.lang.Class,java.lang.String,de.robv.android.xposed.XC_MethodHook)
+    public static varargs void HookByMatchParameters(java.lang.String,java.lang.String,java.lang.Class,java.lang.Class,java.lang.Object[])
+    public static varargs void HookByMatchParameters(java.lang.String,java.lang.String,java.lang.String,java.lang.Class,java.lang.Object[])
+    public static varargs void HookConstructor(java.lang.String,java.lang.Class,java.lang.Object[])
+    public static varargs void HookConstructor(java.lang.String,java.lang.String,java.lang.Object[])
+com.rong862.utils.XposedUtil:
+    private static final java.lang.String TAG
+    public static android.graphics.drawable.Drawable getDrawableById(int)
+    public static android.view.View getViewById(android.content.Context,int)
+    public static void initConfig(java.lang.String,java.lang.String)
+    public static boolean isHook(java.lang.Class)
+    public static void setPackageName(java.lang.String)
+    public static void setSharedPreferences(java.lang.String)
+    public static void setSharedPreferences(java.lang.String,java.lang.String)
+net.dongliu.apk.parser.AbstractApkFile:
+    private net.dongliu.apk.parser.bean.ApkMeta apkMeta
+    private java.util.Set locales
+    private boolean manifestParsed
+    private java.lang.String manifestXml
+    private boolean resourceTableParsed
+    protected abstract java.util.Map getAllCertificateData()
+    public java.util.Map getAllCertificateMetas()
+    public net.dongliu.apk.parser.bean.ApkMeta getApkMeta()
+    public java.util.List getCertificateMetaList()
+    public net.dongliu.apk.parser.bean.Icon getIconFile()
+    public java.util.List getIconFiles()
+    public java.util.List getIconPaths()
+    public java.util.Set getLocales()
+    public java.lang.String getManifestXml()
+    public java.util.Locale getPreferredLocale()
+    private void parseCertificates()
+    private void parseManifest()
+    private void parseResourceTable()
+    public void setPreferredLocale(java.util.Locale)
+    public java.lang.String transBinaryXml(java.lang.String)
+    private void transBinaryXml(byte[],net.dongliu.apk.parser.parser.XmlStreamer)
+    public abstract net.dongliu.apk.parser.bean.ApkSignStatus verifyApk()
+net.dongliu.apk.parser.ApkFile:
+    private static synthetic void $closeResource(java.lang.Throwable,java.lang.AutoCloseable)
+    protected java.util.Map getAllCertificateData()
+    public net.dongliu.apk.parser.bean.ApkSignStatus verifyApk()
+net.dongliu.apk.parser.ApkParser
+net.dongliu.apk.parser.ApkParsers
+net.dongliu.apk.parser.ByteArrayApkFile
+net.dongliu.apk.parser.ByteArrayApkParser
+net.dongliu.apk.parser.Main
+net.dongliu.apk.parser.bean.ApkMeta
+net.dongliu.apk.parser.bean.ApkSignStatus
+net.dongliu.apk.parser.bean.AttributeValues
+net.dongliu.apk.parser.bean.CertificateMeta
+net.dongliu.apk.parser.bean.DexClass:
+    public java.lang.String getPackageName()
+    public java.lang.String getSuperClass()
+    public boolean isAnnotation()
+    public boolean isEnum()
+    public boolean isInterface()
+    public boolean isProtected()
+    public boolean isPublic()
+    public boolean isStatic()
+net.dongliu.apk.parser.bean.GlEsVersion
+net.dongliu.apk.parser.bean.Icon
+net.dongliu.apk.parser.bean.IconPath
+net.dongliu.apk.parser.bean.Locales
+net.dongliu.apk.parser.bean.Permission
+net.dongliu.apk.parser.bean.UseFeature
+net.dongliu.apk.parser.parser.ApkMetaTranslator
+net.dongliu.apk.parser.parser.BinaryXmlParser
+net.dongliu.apk.parser.parser.CertificateParser
+net.dongliu.apk.parser.parser.CompositeXmlStreamer
+net.dongliu.apk.parser.parser.DexParser:
+    private static final int NO_INDEX
+net.dongliu.apk.parser.parser.ResourceTableParser
+net.dongliu.apk.parser.parser.StringPoolEntry:
+    public void setIdx(int)
+    public void setOffset(long)
+net.dongliu.apk.parser.parser.XmlNamespaces$1
+net.dongliu.apk.parser.parser.XmlNamespaces$XmlNamespace
+net.dongliu.apk.parser.parser.XmlNamespaces
+net.dongliu.apk.parser.parser.XmlStreamer
+net.dongliu.apk.parser.parser.XmlTranslator
+net.dongliu.apk.parser.struct.AndroidConstants
+net.dongliu.apk.parser.struct.ChunkHeader
+net.dongliu.apk.parser.struct.ChunkType
+net.dongliu.apk.parser.struct.ResValue$ResDataCOMPLEX
+net.dongliu.apk.parser.struct.ResValue$ResType
+net.dongliu.apk.parser.struct.ResValue
+net.dongliu.apk.parser.struct.ResourceValue$1
+net.dongliu.apk.parser.struct.ResourceValue$BooleanResourceValue
+net.dongliu.apk.parser.struct.ResourceValue$DecimalResourceValue
+net.dongliu.apk.parser.struct.ResourceValue$DimensionValue
+net.dongliu.apk.parser.struct.ResourceValue$FractionValue
+net.dongliu.apk.parser.struct.ResourceValue$HexadecimalResourceValue
+net.dongliu.apk.parser.struct.ResourceValue$NullResourceValue
+net.dongliu.apk.parser.struct.ResourceValue$RGBResourceValue
+net.dongliu.apk.parser.struct.ResourceValue$RawValue
+net.dongliu.apk.parser.struct.ResourceValue$ReferenceResourceValue
+net.dongliu.apk.parser.struct.ResourceValue$StringResourceValue
+net.dongliu.apk.parser.struct.ResourceValue
+net.dongliu.apk.parser.struct.StringPoolHeader
+net.dongliu.apk.parser.struct.dex.DexClassStruct:
+    public long getAnnotationsOff()
+    public long getClassDataOff()
+    public long getInterfacesOff()
+    public int getSourceFileIdx()
+    public long getStaticValuesOff()
+net.dongliu.apk.parser.struct.dex.DexHeader:
+    public static final int kSHA1DigestLen
+    public static final int kSHA1DigestOutputLen
+    private byte[] signature
+    public long getDataOff()
+    public int getDataSize()
+    public long getFieldIdsOff()
+    public int getFieldIdsSize()
+    public long getFileSize()
+    public long getLinkOff()
+    public long getLinkSize()
+    public long getMapOff()
+    public long getMethodIdsOff()
+    public int getMethodIdsSize()
+    public long getProtoIdsOff()
+    public int getProtoIdsSize()
+    public byte[] getSignature()
+    public int getVersion()
+    public void setSignature(byte[])
+net.dongliu.apk.parser.struct.resource.Densities
+net.dongliu.apk.parser.struct.resource.LibraryEntry
+net.dongliu.apk.parser.struct.resource.LibraryHeader
+net.dongliu.apk.parser.struct.resource.NullHeader
+net.dongliu.apk.parser.struct.resource.PackageHeader
+net.dongliu.apk.parser.struct.resource.ResTableConfig
+net.dongliu.apk.parser.struct.resource.ResourceEntry
+net.dongliu.apk.parser.struct.resource.ResourceMapEntry
+net.dongliu.apk.parser.struct.resource.ResourcePackage
+net.dongliu.apk.parser.struct.resource.ResourceTable$Resource
+net.dongliu.apk.parser.struct.resource.ResourceTable:
+    private java.util.Map packageMap
+    private net.dongliu.apk.parser.struct.StringPool stringPool
+    public static java.util.Map sysStyle
+    static void <clinit>()
+    public void <init>()
+    public void addPackage(net.dongliu.apk.parser.struct.resource.ResourcePackage)
+    public net.dongliu.apk.parser.struct.resource.ResourcePackage getPackage(short)
+    public java.util.List getResourcesById(long)
+    public net.dongliu.apk.parser.struct.StringPool getStringPool()
+    public void setStringPool(net.dongliu.apk.parser.struct.StringPool)
+net.dongliu.apk.parser.struct.resource.ResourceTableHeader
+net.dongliu.apk.parser.struct.resource.ResourceTableMap$AttributeType
+net.dongliu.apk.parser.struct.resource.ResourceTableMap$MapAttr
+net.dongliu.apk.parser.struct.resource.ResourceTableMap
+net.dongliu.apk.parser.struct.resource.Type
+net.dongliu.apk.parser.struct.resource.TypeHeader
+net.dongliu.apk.parser.struct.resource.TypeSpec
+net.dongliu.apk.parser.struct.resource.TypeSpecHeader
+net.dongliu.apk.parser.struct.xml.Attribute$AttrIds
+net.dongliu.apk.parser.struct.xml.Attribute
+net.dongliu.apk.parser.struct.xml.Attributes
+net.dongliu.apk.parser.struct.xml.NullHeader
+net.dongliu.apk.parser.struct.xml.XmlCData
+net.dongliu.apk.parser.struct.xml.XmlHeader
+net.dongliu.apk.parser.struct.xml.XmlNamespaceEndTag
+net.dongliu.apk.parser.struct.xml.XmlNamespaceStartTag
+net.dongliu.apk.parser.struct.xml.XmlNodeEndTag
+net.dongliu.apk.parser.struct.xml.XmlNodeHeader
+net.dongliu.apk.parser.struct.xml.XmlNodeStartTag
+net.dongliu.apk.parser.struct.xml.XmlResourceMapHeader
+net.dongliu.apk.parser.utils.ByteBuffers:
+    public void <init>()
+    public static void position(java.nio.ByteBuffer,int)
+    public static java.lang.String readString(java.nio.ByteBuffer,int)
+    public static int readUShort(java.nio.ByteBuffer)
+    public static java.lang.String readZeroTerminatedString(java.nio.ByteBuffer,int)
+    public static void skip(java.nio.ByteBuffer,int)
+net.dongliu.apk.parser.utils.Pair
+net.dongliu.apk.parser.utils.ParseUtils
+net.dongliu.apk.parser.utils.ResourceFetcher$1
+net.dongliu.apk.parser.utils.ResourceFetcher
+net.dongliu.apk.parser.utils.ResourceLoader
+net.dongliu.apk.parser.utils.Utils:
+    public void <init>()
+    public static boolean isEmpty(java.lang.CharSequence)
+    public static boolean isNumeric(java.lang.CharSequence)
+    public static java.lang.String join(java.lang.Iterable,java.lang.String)
+    public static java.lang.String join(java.util.Iterator,java.lang.String)
+    public static java.lang.String substringBefore(java.lang.String,java.lang.String)
+net.dongliu.apk.parser.utils.xml.AggregateTranslator
+net.dongliu.apk.parser.utils.xml.CharSequenceTranslator
+net.dongliu.apk.parser.utils.xml.CodePointTranslator
+net.dongliu.apk.parser.utils.xml.EntityArrays
+net.dongliu.apk.parser.utils.xml.LookupTranslator
+net.dongliu.apk.parser.utils.xml.NumericEntityEscaper
+net.dongliu.apk.parser.utils.xml.UnicodeUnpairedSurrogateRemover
+net.dongliu.apk.parser.utils.xml.XmlEscaper
+net.dongliu.apk.parser.AbstractApkFile:
+    public net.dongliu.apk.parser.struct.resource.ResourceTable resourceTable
+net.dongliu.apk.parser.struct.dex.DexClassStruct:
+    public static int ACC_ABSTRACT
+    public static int ACC_ANNOTATION
+    public static int ACC_BRIDGE
+    public static int ACC_CONSTRUCTOR
+    public static int ACC_DECLARED_SYNCHRONIZED
+    public static int ACC_ENUM
+    public static int ACC_FINAL
+    public static int ACC_INTERFACE
+    public static int ACC_NATIVE
+    public static int ACC_PRIVATE
+    public static int ACC_PROTECTED
+    public static int ACC_PUBLIC
+    public static int ACC_STATIC
+    public static int ACC_STRICT
+    public static int ACC_SYNCHRONIZED
+    public static int ACC_SYNTHETIC
+    public static int ACC_TRANSIENT
+    public static int ACC_VARARGS
+    public static int ACC_VOLATILE
+net.dongliu.apk.parser.struct.resource.ResourceTable

@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.text.TextUtils;
 
 import de.robv.android.xposed.XC_MethodHook;
-import de.robv.android.xposed.XposedHelpers;
 
-import static com.rong862.SplashAd.utils.LogUtil.log;
+import static com.rong862.utils.LogUtil.log;
+import static com.rong862.utils.XposedPlus.HookByMatchName;
 
 public class QqliveHook extends BaseHook {
 
@@ -16,19 +16,22 @@ public class QqliveHook extends BaseHook {
     }
 
     @Override
-    public void startHook(ClassLoader cl) {
+    public void startHook() {
 
         log(TAG, "腾讯视频启动...");
 
-        XposedHelpers.findAndHookMethod(Intent.class, "getBooleanExtra", String.class, boolean.class, new XC_MethodHook() {
-            @Override
-            protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-                super.beforeHookedMethod(param);
+        HookByMatchName(TAG,
+                Intent.class,
+                null,"getBooleanExtra", String.class, boolean.class,
+                new XC_MethodHook() {
+                    @Override
+                    protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
+                        super.beforeHookedMethod(param);
 
-                if(TextUtils.equals((String)param.args[0], "home_need_splash")){
-                    param.setResult(false);
-                }
-            }
+                        if(TextUtils.equals((String)param.args[0], "home_need_splash")){
+                            param.setResult(false);
+                        }
+                    }
         });
     }
 }

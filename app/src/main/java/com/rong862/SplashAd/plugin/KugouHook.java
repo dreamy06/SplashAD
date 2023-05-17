@@ -6,8 +6,11 @@ import android.content.Intent;
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedHelpers;
 
-import static com.rong862.SplashAd.utils.LogUtil.debug;
-import static com.rong862.SplashAd.utils.LogUtil.log;
+import static com.rong862.utils.LogUtil.error;
+import static com.rong862.utils.LogUtil.log;
+import static com.rong862.utils.XposedPlus.HookByMatchName;
+import static com.rong862.utils.XposedUtil.CL;
+
 
 public class KugouHook extends BaseHook{
 
@@ -16,29 +19,30 @@ public class KugouHook extends BaseHook{
     public KugouHook(){}
 
     @Override
-    public void startHook(ClassLoader cl) {
+    public void startHook() {
 
         log(TAG,"酷狗启动...");
 
-        Class<?> SplashAdClass = XposedHelpers.findClassIfExists("com.kugou.android.app.splash.SplashActivity", cl);
-        Class<?> mainClass = XposedHelpers.findClassIfExists("com.kugou.android.app.MediaActivity", cl);
+        Class<?> mainClass = XposedHelpers.findClassIfExists("com.kugou.android.app.MediaActivity", CL);
 
-        if(SplashAdClass == null || mainClass == null){
-            log(TAG,"class is not exit !");
+        if(mainClass == null){
+            error(TAG,"MediaActivity Class is not exit !");
             return;
         }
 
-        XposedHelpers.findAndHookMethod(SplashAdClass, "onCreate", android.os.Bundle.class, new XC_MethodHook() {
-            @Override
-            protected void afterHookedMethod(MethodHookParam param) throws Throwable {
-                super.afterHookedMethod(param);
+        HookByMatchName(TAG,
+                "com.kugou.android.app.splash.SplashActivity",
+                null,"onCreate", android.os.Bundle.class,
+                new XC_MethodHook() {
+                    @Override
+                    protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                        super.afterHookedMethod(param);
 
-                Activity AdActivity = (Activity)param.thisObject;
-                Intent intent = new Intent(AdActivity, mainClass);
-                AdActivity.startActivity(intent);
-                debug(TAG,"AdActivity finish...");
-                AdActivity.finish();
-            }
+                        Activity AdActivity = (Activity)param.thisObject;
+                        Intent intent = new Intent(AdActivity, mainClass);
+                        AdActivity.startActivity(intent);
+                        AdActivity.finish();
+                    }
         });
     }
 }

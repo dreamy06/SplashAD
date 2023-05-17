@@ -1,11 +1,11 @@
 package com.rong862.SplashAd.plugin;
 
 import de.robv.android.xposed.XC_MethodReplacement;
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedHelpers;
 
-import static com.rong862.SplashAd.utils.LogUtil.debug;
-import static com.rong862.SplashAd.utils.LogUtil.log;
+import static com.rong862.utils.LogUtil.debug;
+import static com.rong862.utils.LogUtil.log;
+import static com.rong862.utils.XposedPlus.HookAllMethods;
+
 
 public class MaimaiHook extends BaseHook{
 
@@ -14,24 +14,19 @@ public class MaimaiHook extends BaseHook{
     public MaimaiHook(){}
 
     @Override
-    public void startHook(ClassLoader cl) {
+    public void startHook() {
 
         log(TAG,"脉脉启动...");
 
-        Class<?> MainViewClass = XposedHelpers.findClassIfExists("com.taou.maimai.MainViewModel", cl);
+        HookAllMethods(TAG,
+                "com.taou.maimai.MainViewModel", "showColdStartAd",
+                new XC_MethodReplacement() {
+                    @Override
+                    protected Object replaceHookedMethod(MethodHookParam methodHookParam){
 
-        if(MainViewClass == null){
-            log(TAG,"MainViewClass is not exit !");
-            return;
-        }
-
-        XposedBridge.hookAllMethods(MainViewClass, "showColdStartAd", new XC_MethodReplacement() {
-            @Override
-            protected Object replaceHookedMethod(MethodHookParam methodHookParam){
-
-                debug(TAG,"showColdStartAd is Replacemented...");
-                return null;
-            }
+                        debug(TAG,"showColdStartAd is Replacemented...");
+                        return null;
+                    }
         });
     }
 }

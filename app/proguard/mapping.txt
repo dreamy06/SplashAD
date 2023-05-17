@@ -3,101 +3,334 @@
 # min_api: 28
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.0"}
-# pg_map_id: 0afefba
-# pg_map_hash: SHA-256 0afefba2b0172de7963557b8fdca2b5055e2106052dcfa2f0e9db46b08b3fc7f
+# pg_map_id: 9937867
+# pg_map_hash: SHA-256 99378677abe373b345de680d889a0980b5e9a76ab601cf79c108538253a22dfb
+com.rong862.SplashAd.Hook -> a.a:
+    void after(de.robv.android.xposed.XC_MethodHook$MethodHookParam) -> a
+    void before(de.robv.android.xposed.XC_MethodHook$MethodHookParam) -> b
 com.rong862.SplashAd.MainHook -> com.rong862.SplashAd.MainHook:
-    boolean isLoadPlugin -> a
-    boolean access$000() -> a
-    boolean access$002(boolean) -> b
-com.rong862.SplashAd.MainHook$1 -> com.rong862.SplashAd.MainHook$a:
-    com.rong862.SplashAd.MainHook this$0 -> b
-    java.lang.Class val$mClass -> a
-com.rong862.SplashAd.plugin.AiqiyiHook -> a.a:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.AiqiyiHook$1 -> a.a$a:
+    void loadPlugin() -> f
+com.rong862.SplashAd.plugin.AiqiyiHook -> b.a:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.AiqiyiHook$1 -> b.a$a:
     com.rong862.SplashAd.plugin.AiqiyiHook this$0 -> a
-com.rong862.SplashAd.plugin.BaiduMapHook -> a.b:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.BaiduMapHook$1 -> a.b$a:
+    void before(de.robv.android.xposed.XC_MethodHook$MethodHookParam) -> b
+com.rong862.SplashAd.plugin.BaiduMapHook -> b.b:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.BaiduMapHook$1 -> b.b$a:
     com.rong862.SplashAd.plugin.BaiduMapHook this$0 -> a
-com.rong862.SplashAd.plugin.BaseHook -> a.c:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.BilibiliHook -> a.d:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.BilibiliHook$1 -> a.d$a:
+com.rong862.SplashAd.plugin.BaseHook -> b.c:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.BilibiliHook -> b.d:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.BilibiliHook$1 -> b.d$a:
     com.rong862.SplashAd.plugin.BilibiliHook this$0 -> a
-com.rong862.SplashAd.plugin.KugouHook -> a.e:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.KugouHook$1 -> a.e$a:
+com.rong862.SplashAd.plugin.KugouHook -> b.e:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.KugouHook$1 -> b.e$a:
     com.rong862.SplashAd.plugin.KugouHook this$0 -> b
     java.lang.Class val$mainClass -> a
-com.rong862.SplashAd.plugin.LeKeHook -> a.f:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.LeKeHook$1 -> a.f$a:
+com.rong862.SplashAd.plugin.LeKeHook -> b.f:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.LeKeHook$1 -> b.f$a:
     com.rong862.SplashAd.plugin.LeKeHook this$0 -> a
-com.rong862.SplashAd.plugin.LeKeHook$2 -> a.f$b:
+com.rong862.SplashAd.plugin.LeKeHook$2 -> b.f$b:
     com.rong862.SplashAd.plugin.LeKeHook this$0 -> a
-com.rong862.SplashAd.plugin.MaimaiHook -> a.g:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.MaimaiHook$1 -> a.g$a:
+com.rong862.SplashAd.plugin.MaimaiHook -> b.g:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.MaimaiHook$1 -> b.g$a:
     com.rong862.SplashAd.plugin.MaimaiHook this$0 -> a
-com.rong862.SplashAd.plugin.MeituanHook -> a.h:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.MeituanHook$1 -> a.h$a:
+com.rong862.SplashAd.plugin.MeituanHook -> b.h:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.MeituanHook$1 -> b.h$a:
     com.rong862.SplashAd.plugin.MeituanHook this$0 -> a
-com.rong862.SplashAd.plugin.MeituanHook$2 -> a.h$b:
+com.rong862.SplashAd.plugin.MeituanHook$2 -> b.h$b:
     com.rong862.SplashAd.plugin.MeituanHook this$0 -> a
-com.rong862.SplashAd.plugin.MeituanHook$3 -> a.h$c:
+com.rong862.SplashAd.plugin.MeituanHook$3 -> b.h$c:
     com.rong862.SplashAd.plugin.MeituanHook this$0 -> a
-com.rong862.SplashAd.plugin.MiPayHook -> a.i:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.MiPayHook$1 -> a.i$a:
-    com.rong862.SplashAd.plugin.MiPayHook this$0 -> b
-    java.lang.Class val$MiFinanceClass -> a
-com.rong862.SplashAd.plugin.MiuiMarketHook -> a.j:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.MiuiMarketHook$1 -> a.j$a:
+com.rong862.SplashAd.plugin.MiPayHook -> b.i:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.MiPayHook$1 -> b.i$a:
+    com.rong862.SplashAd.plugin.MiPayHook this$0 -> a
+com.rong862.SplashAd.plugin.MiuiMarketHook -> b.j:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.MiuiMarketHook$1 -> b.j$a:
     com.rong862.SplashAd.plugin.MiuiMarketHook this$0 -> a
-com.rong862.SplashAd.plugin.MiuiMusicHook -> a.k:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.MiuiMusicHook$1 -> a.k$a:
+com.rong862.SplashAd.plugin.MiuiMusicHook -> b.k:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.MiuiMusicHook$1 -> b.k$a:
     com.rong862.SplashAd.plugin.MiuiMusicHook this$0 -> a
-com.rong862.SplashAd.plugin.NeteaseHook -> a.l:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.NeteaseHook$1 -> a.l$a:
-    com.rong862.SplashAd.plugin.NeteaseHook this$0 -> b
-    java.lang.Class val$mainClass -> a
-com.rong862.SplashAd.plugin.NeteaseHook$2 -> a.l$b:
+com.rong862.SplashAd.plugin.NeteaseHook -> b.l:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.NeteaseHook$1 -> b.l$a:
     com.rong862.SplashAd.plugin.NeteaseHook this$0 -> a
-com.rong862.SplashAd.plugin.QqliveHook -> a.m:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.QqliveHook$1 -> a.m$a:
+com.rong862.SplashAd.plugin.NeteaseHook$2 -> b.l$b:
+    com.rong862.SplashAd.plugin.NeteaseHook this$0 -> a
+com.rong862.SplashAd.plugin.QqliveHook -> b.m:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.QqliveHook$1 -> b.m$a:
     com.rong862.SplashAd.plugin.QqliveHook this$0 -> a
-com.rong862.SplashAd.plugin.SinaWeiboHook -> a.n:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.SinaWeiboHook$1 -> a.n$a:
-    com.rong862.SplashAd.plugin.SinaWeiboHook this$0 -> b
-    java.lang.Class val$mainClass -> a
-com.rong862.SplashAd.plugin.TicketHook -> a.o:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.TicketHook$1 -> a.o$a:
+com.rong862.SplashAd.plugin.SinaWeiboHook -> b.n:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.SinaWeiboHook$1 -> b.n$a:
+    com.rong862.SplashAd.plugin.SinaWeiboHook this$0 -> a
+com.rong862.SplashAd.plugin.SinaWeiboHook$2 -> b.n$b:
+    com.rong862.SplashAd.plugin.SinaWeiboHook this$0 -> a
+com.rong862.SplashAd.plugin.SinaWeiboHook$3 -> b.n$c:
+    com.rong862.SplashAd.plugin.SinaWeiboHook this$0 -> a
+    void before(de.robv.android.xposed.XC_MethodHook$MethodHookParam) -> b
+com.rong862.SplashAd.plugin.SinaWeiboHook$cardType -> b.n$d:
+    int[] noDisplay -> a
+com.rong862.SplashAd.plugin.TicketHook -> b.o:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.TicketHook$1 -> b.o$a:
     com.rong862.SplashAd.plugin.TicketHook this$0 -> a
-com.rong862.SplashAd.plugin.TicketHook$2 -> a.o$b:
+com.rong862.SplashAd.plugin.TicketHook$2 -> b.o$b:
     com.rong862.SplashAd.plugin.TicketHook this$0 -> a
-com.rong862.SplashAd.plugin.XimalayaHook -> a.p:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.XimalayaHook$1 -> a.p$a:
+com.rong862.SplashAd.plugin.XimalayaHook -> b.p:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.XimalayaHook$1 -> b.p$a:
     com.rong862.SplashAd.plugin.XimalayaHook this$0 -> a
-com.rong862.SplashAd.plugin.ZhihuHook -> a.q:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.ZhihuHook$1 -> a.q$a:
+com.rong862.SplashAd.plugin.ZhihuHook -> b.q:
+    void startHook() -> a
+    boolean classSearch() -> b
+com.rong862.SplashAd.plugin.ZhihuHook$1 -> b.q$a:
     com.rong862.SplashAd.plugin.ZhihuHook this$0 -> a
-com.rong862.SplashAd.plugin.ZhixingHook -> a.r:
-    void startHook(java.lang.ClassLoader) -> a
-com.rong862.SplashAd.plugin.ZhixingHook$1 -> a.r$a:
+    void after(de.robv.android.xposed.XC_MethodHook$MethodHookParam) -> a
+com.rong862.SplashAd.plugin.ZhixingHook -> b.r:
+    void startHook() -> a
+com.rong862.SplashAd.plugin.ZhixingHook$1 -> b.r$a:
     com.rong862.SplashAd.plugin.ZhixingHook this$0 -> a
-com.rong862.SplashAd.utils.LogUtil -> b.a:
-    void debug(java.lang.String,java.lang.String) -> a
-    void log(java.lang.String,java.lang.String) -> b
-com.rong862.SplashAd.utils.PackageUtil -> b.b:
+com.rong862.SplashAd.utils.PackageUtil -> c.a:
     java.util.Map PACKAGE_MAP -> a
+com.rong862.utils.ClassFilter -> d.a:
+    java.util.Map classesCache -> a
+    java.lang.Class findClassIfExists(java.lang.String,java.lang.ClassLoader) -> a
+    com.rong862.utils.ClassFilter$Classes findClassesFromPackage(java.lang.ClassLoader,java.util.List,java.lang.String,int) -> b
+    java.lang.reflect.Method findFirstMethodByMatchName(java.lang.Object,java.lang.Class,java.lang.String,java.lang.Class[]) -> c
+    java.lang.reflect.Method findFirstPublicMethodByMatchName(java.lang.Object,java.lang.Class,java.lang.String,java.lang.Class[]) -> d
+    java.lang.reflect.Method findFirstUnlimitedMethodByMatchName(java.lang.Class,java.lang.Class,java.lang.String,java.lang.Class[]) -> e
+    java.lang.String getClassName(net.dongliu.apk.parser.bean.DexClass) -> f
+    java.util.List getClassNameList(java.lang.String) -> g
+com.rong862.utils.ClassFilter$Classes -> d.a$a:
+    java.util.List classes -> a
+    com.rong862.utils.ClassFilter$Classes filterByMethodMatchName(java.lang.Class,java.lang.String,java.lang.Class[]) -> a
+    java.lang.Class firstOrNull() -> b
+com.rong862.utils.ConfigUtil -> d.b:
+    android.content.SharedPreferences mSharedPreferences -> a
+    java.lang.String getString(java.lang.String) -> a
+    java.lang.String getString(java.lang.String,java.lang.String) -> b
+    void setString(java.lang.String,java.lang.String) -> c
+com.rong862.utils.LogUtil -> d.c:
+    java.lang.String TAG -> a
+    boolean isDebug -> b
+    void debug(java.lang.String,java.lang.String) -> a
+    void error(java.lang.String,java.lang.String) -> b
+    void log(java.lang.String,java.lang.String) -> c
+    void setDebug(boolean) -> d
+    void setLogTag(java.lang.String) -> e
+com.rong862.utils.MultiprocessSharedPreferences -> com.rong862.utils.MultiprocessSharedPreferences:
+    android.content.Context mContext -> a
+    java.util.HashMap mListenersCount -> h
+    java.lang.Object CONTENT -> i
+    android.content.UriMatcher mUriMatcher -> g
+    java.lang.String AUTHORITY -> j
+    android.net.Uri AUTHORITY_URI -> k
+    android.content.BroadcastReceiver mReceiver -> f
+    java.util.WeakHashMap mListeners -> e
+    java.lang.String mName -> b
+    int mMode -> c
+    boolean mIsSafeMode -> d
+    java.lang.String access$000(com.rong862.utils.MultiprocessSharedPreferences) -> a
+    java.util.WeakHashMap access$100(com.rong862.utils.MultiprocessSharedPreferences) -> b
+    boolean access$200(com.rong862.utils.MultiprocessSharedPreferences) -> c
+    android.content.Context access$300(com.rong862.utils.MultiprocessSharedPreferences) -> d
+    boolean access$400(com.rong862.utils.MultiprocessSharedPreferences,android.content.Context) -> e
+    int access$500(com.rong862.utils.MultiprocessSharedPreferences) -> f
+    android.net.Uri access$600() -> g
+    boolean access$700(com.rong862.utils.MultiprocessSharedPreferences,java.lang.Throwable) -> h
+    boolean access$800(com.rong862.utils.MultiprocessSharedPreferences,java.lang.Throwable) -> i
+    boolean checkInitAuthority(android.content.Context) -> j
+    void checkInitListenersCount() -> k
+    java.lang.Throwable getLastCause(java.lang.Throwable) -> l
+    android.content.SharedPreferences getSharedPreferences(android.content.Context,java.lang.String,int) -> m
+    android.content.SharedPreferences getSystemSharedPreferences(java.lang.String,int) -> n
+    java.lang.Object getValue(java.lang.String,java.lang.String,java.lang.Object) -> o
+    boolean isPackageManagerHasDiedException(java.lang.Throwable) -> p
+    boolean isSafeMode(android.content.Context) -> q
+    boolean isUnstableCountException(java.lang.Throwable) -> r
+    java.lang.String makeAction(java.lang.String) -> s
+    void notifyListeners(java.lang.String,java.util.ArrayList) -> t
+    void setAuthority(java.lang.String) -> u
+com.rong862.utils.MultiprocessSharedPreferences$1 -> com.rong862.utils.MultiprocessSharedPreferences$a:
+    com.rong862.utils.MultiprocessSharedPreferences this$0 -> a
+com.rong862.utils.MultiprocessSharedPreferences$BundleCursor -> com.rong862.utils.MultiprocessSharedPreferences$b:
+    android.os.Bundle mBundle -> a
+com.rong862.utils.MultiprocessSharedPreferences$EditorImpl -> com.rong862.utils.MultiprocessSharedPreferences$c:
+    java.util.Map mModified -> a
+    com.rong862.utils.MultiprocessSharedPreferences this$0 -> c
+    boolean mClear -> b
+    boolean setValue(java.lang.String) -> a
+com.rong862.utils.MultiprocessSharedPreferences$ReflectionUtil -> com.rong862.utils.MultiprocessSharedPreferences$d:
+    java.lang.String contentProvidermAuthority(android.content.ContentProvider) -> a
+    android.content.ContentValues contentValuesNewInstance(java.util.HashMap) -> b
+    void editorApply(android.content.SharedPreferences$Editor) -> c
+    android.content.SharedPreferences$Editor editorPutStringSet(android.content.SharedPreferences$Editor,java.lang.String,java.util.Set) -> d
+    java.util.Set sharedPreferencesGetStringSet(android.content.SharedPreferences,java.lang.String,java.util.Set) -> e
+com.rong862.utils.VersionUtil -> d.d:
+    java.lang.String getVersionCode(android.content.Context) -> a
+com.rong862.utils.XposedPlus -> d.e:
+    void HookAllMethods(java.lang.String,java.lang.String,java.lang.String,de.robv.android.xposed.XC_MethodHook) -> a
+    void HookByMatchName(java.lang.String,java.lang.Class,java.lang.Class,java.lang.String,java.lang.Object[]) -> b
+    void HookByMatchName(java.lang.String,java.lang.String,java.lang.Class,java.lang.String,java.lang.Object[]) -> c
+    java.lang.Class[] getParameterClasses(java.lang.Object[]) -> d
+com.rong862.utils.XposedUtil -> d.f:
+    android.content.Context appContext -> a
+    int SharedPreferencesMode -> m
+    boolean isHookApp -> i
+    java.lang.String SharedPreferencesName -> k
+    java.lang.String packageName -> j
+    java.lang.String providerName -> l
+    com.rong862.utils.ConfigUtil SP -> g
+    java.lang.ClassLoader CL -> b
+    boolean isLoadPlugin -> h
+    java.lang.String apkPath -> c
+    java.util.List hookClassList -> n
+    android.content.res.XModuleResources Xres -> f
+    java.lang.String VersionCode -> e
+    java.lang.String loadPackageName -> d
+    void access$000(com.rong862.utils.XposedUtil,android.content.Context) -> a
+    int getIdByName(java.lang.String) -> b
+    void init(android.content.Context) -> c
+    void initConfig(java.lang.String) -> d
+    void loadPackage(de.robv.android.xposed.callbacks.XC_LoadPackage$LoadPackageParam) -> e
+    void loadPlugin() -> f
+    void setDebug(boolean) -> g
+    void setLogTag(java.lang.String) -> h
+com.rong862.utils.XposedUtil$1 -> d.f$a:
+    com.rong862.utils.XposedUtil this$0 -> a
+com.rong862.utils.XposedUtil$2 -> d.f$b:
+    com.rong862.utils.XposedUtil this$0 -> a
+com.rong862.utils.XposedUtil$3 -> d.f$c:
+    com.rong862.utils.XposedUtil this$0 -> a
+net.dongliu.apk.parser.AbstractApkFile -> e.a:
+    java.util.List iconPaths -> b
+    java.util.Map certificateMetaMap -> c
+    net.dongliu.apk.parser.bean.DexClass[] dexClasses -> a
+    java.util.Locale DEFAULT_LOCALE -> e
+    java.util.Locale preferredLocale -> d
+    net.dongliu.apk.parser.bean.DexClass[] getDexClasses() -> a
+    byte[] getFileData(java.lang.String) -> b
+    net.dongliu.apk.parser.bean.DexClass[] mergeDexClasses(net.dongliu.apk.parser.bean.DexClass[],net.dongliu.apk.parser.bean.DexClass[]) -> c
+    net.dongliu.apk.parser.bean.DexClass[] parseDexFile(java.lang.String) -> d
+    void parseDexFiles() -> e
+net.dongliu.apk.parser.ApkFile -> e.b:
+    java.util.zip.ZipFile zf -> f
+    java.io.File apkFile -> g
+    byte[] getFileData(java.lang.String) -> b
+net.dongliu.apk.parser.bean.DexClass -> f.a:
+    java.lang.String classType -> a
+    java.lang.String superClass -> b
+    int accessFlags -> c
+    java.lang.String getClassType() -> a
+    void setAccessFlags(int) -> b
+    void setClassType(java.lang.String) -> c
+    void setSuperClass(java.lang.String) -> d
+net.dongliu.apk.parser.parser.DexParser -> g.a:
+    net.dongliu.apk.parser.bean.DexClass[] dexClasses -> c
+    java.nio.ByteBuffer buffer -> a
+    java.nio.ByteOrder byteOrder -> b
+    net.dongliu.apk.parser.bean.DexClass[] getDexClasses() -> a
+    void parse() -> b
+    net.dongliu.apk.parser.struct.dex.DexClassStruct[] readClass(long,int) -> c
+    net.dongliu.apk.parser.struct.dex.DexHeader readDexHeader() -> d
+    java.lang.String readString() -> e
+    java.lang.String readString(int) -> f
+    long[] readStringPool(long,int) -> g
+    net.dongliu.apk.parser.struct.StringPool readStrings(long[]) -> h
+    int[] readTypes(long,int) -> i
+    int readVarInts() -> j
+net.dongliu.apk.parser.parser.StringPoolEntry -> g.b:
+    long offset -> b
+    int idx -> a
+    int getIdx() -> a
+    long getOffset() -> b
+net.dongliu.apk.parser.struct.StringPool -> h.a:
+    java.lang.String[] pool -> a
+    java.lang.String get(int) -> a
+    void set(int,java.lang.String) -> b
+net.dongliu.apk.parser.struct.dex.DexClassStruct -> i.a:
+    long annotationsOff -> f
+    long staticValuesOff -> h
+    long classDataOff -> g
+    long interfacesOff -> d
+    int sourceFileIdx -> e
+    int accessFlags -> b
+    int superclassIdx -> c
+    int classIdx -> a
+    int getAccessFlags() -> a
+    int getClassIdx() -> b
+    int getSuperclassIdx() -> c
+    void setAccessFlags(int) -> d
+    void setAnnotationsOff(long) -> e
+    void setClassDataOff(long) -> f
+    void setClassIdx(int) -> g
+    void setInterfacesOff(long) -> h
+    void setSourceFileIdx(int) -> i
+    void setStaticValuesOff(long) -> j
+    void setSuperclassIdx(int) -> k
+net.dongliu.apk.parser.struct.dex.DexHeader -> i.b:
+    long typeIdsOff -> j
+    int methodIdsSize -> o
+    long protoIdsOff -> l
+    int fieldIdsSize -> m
+    long mapOff -> f
+    long linkOff -> e
+    int protoIdsSize -> k
+    long stringIdsOff -> h
+    int typeIdsSize -> i
+    long fileSize -> b
+    int stringIdsSize -> g
+    long linkSize -> d
+    long headerSize -> c
+    int version -> a
+    long classDefsOff -> r
+    long dataOff -> t
+    long fieldIdsOff -> n
+    int dataSize -> s
+    long methodIdsOff -> p
+    int classDefsSize -> q
+    void setVersion(int) -> A
+    long getClassDefsOff() -> a
+    int getClassDefsSize() -> b
+    long getHeaderSize() -> c
+    long getStringIdsOff() -> d
+    int getStringIdsSize() -> e
+    long getTypeIdsOff() -> f
+    int getTypeIdsSize() -> g
+    void setClassDefsOff(long) -> h
+    void setClassDefsSize(int) -> i
+    void setDataOff(long) -> j
+    void setDataSize(int) -> k
+    void setFieldIdsOff(long) -> l
+    void setFieldIdsSize(int) -> m
+    void setFileSize(long) -> n
+    void setHeaderSize(long) -> o
+    void setLinkOff(long) -> p
+    void setLinkSize(long) -> q
+    void setMapOff(long) -> r
+    void setMethodIdsOff(long) -> s
+    void setMethodIdsSize(int) -> t
+    void setProtoIdsOff(long) -> u
+    void setProtoIdsSize(int) -> v
+    void setStringIdsOff(long) -> w
+    void setStringIdsSize(int) -> x
+    void setTypeIdsOff(long) -> y
+    void setTypeIdsSize(int) -> z
+net.dongliu.apk.parser.utils.ByteBuffers -> j.a:
+    void position(java.nio.ByteBuffer,long) -> a
+    byte[] readBytes(java.nio.ByteBuffer,int) -> b
+    short readUByte(java.nio.ByteBuffer) -> c
+    long readUInt(java.nio.ByteBuffer) -> d
+net.dongliu.apk.parser.utils.Utils -> j.b:
+    byte[] toByteArray(java.io.InputStream) -> a
